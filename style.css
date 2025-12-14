@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #02020a; 
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    .converter-card {
+        background-color: #050514; 
+        width: 100%;
+        max-width: 380px;
+        padding: 40px 30px;
+        border-radius: 20px;
+        border: 1px solid #1a1a40;
+        box-shadow: 0 0 40px rgba(10, 10, 50, 0.5);
+
+        .input-group {
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 0.7rem;
+                color: #aeb2d6;
+                margin-bottom: 8px;
+                letter-spacing: 1px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            input, select {
+                background-color: #02020a;
+                border: 1px solid #1f2245;
+                border-radius: 8px;
+                padding: 15px;
+                color: #fff;
+                font-size: 1rem;
+                font-family: 'Inter', sans-serif;
+                outline: none;
+                width: 100%;
+                transition: border-color 0.3s;
+
+                &:focus {
+                    border-color: #3b4cca;
+                }
+            }
+        }
+
+        #btn {
+            width: 100%;
+            background-color: #1e2a78;
+            color: #fff;
+            border: none;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+
+            &:hover {
+                background-color: #2a3aa0;
+            }
+        }
+
+        .style-container {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #1f2245;
+            text-align: center;
+            
+            .resultado p {
+                margin: 5px 0;
+            }
+
+            .resultado p:first-child {
+                font-size: 0.9rem;
+                color: #aeb2d6;
+            }
+
+            .resultado p:last-child {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: #4cd137; 
+            }
+        }
+    }
+}
